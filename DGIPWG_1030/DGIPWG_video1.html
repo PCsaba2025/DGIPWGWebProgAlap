@@ -15,6 +15,10 @@
             width: 40rem;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         footer {
             border-top: 4px solid gray;
             padding-top: 2rem;
@@ -22,7 +26,32 @@
             width: 37.5rem;
             text-align: right;
         }
+
+        div.grid>div {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+
+        button {
+            width: 2.5rem;
+            height: 2.5rem;
+            line-height: 4;
+            overflow: hidden;
+
+            border: none;
+            border-radius: #bdf;
+            box-shadow: 0 0 0 0.125rem #000000bb, inset 0 0 0.25rem 0 #ffffffbb;
+        }
+
+        button:hover {
+            background-color: #9cf;
+        }
+
     </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
 </head>
 <body>
 
