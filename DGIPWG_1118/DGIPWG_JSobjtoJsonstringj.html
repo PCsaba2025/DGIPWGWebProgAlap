@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON megvalósítása - JavaScript</title>
+</head>
+
+<body>
+    <h2>JavaScript objektum konvertálása JSON String</h2>
+    <div class="jsonString" style="font-family: monospace;">
+
+    </div>
+</body>
+<script>
+    const jsonObjPCS = {
+        Egytetem: "Tokaj Hegyalja Egyetem",
+        Város: "Sárospatak",
+        Irányítószám: "3950",
+        Név: "Pásztor Csaba"
+    }
+
+    const jsonString = JSON.stringify(jsonObjPCS, null, 4);
+
+    const jsonStringDiv = documnet.querySelector('.jsonString');
+    jsonStringDiv.innerHTML = jsonString;
+</script>
+</html>
