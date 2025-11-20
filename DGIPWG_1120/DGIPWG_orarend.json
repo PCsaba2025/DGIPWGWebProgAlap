@@ -1,0 +1,17 @@
+{
+    "DGIPWG_orarend": {
+        "ora": [
+            {
+                "targy": "Szoftverfrissítés",
+                "idopont": {
+                    "nap": "hetfő",
+                    "tol": 10,
+                    "ig": 12
+                },
+                "helyszin": "Inf. 103",
+                "oktato": "Dr. Hornyák Olivér",
+                "szak": "Program Tervező Informatikus"
+            },
+        ]
+    }
+}
