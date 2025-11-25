@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tömbökön belüli</title>
+</head>
+<body>
+    
+    <h1>Tömbökön belüli</h1>
+
+    <div id="JsonDGIPWG">
+
+    </div>
+    <script>
+        const PCS = {
+            "name": "Pásztor Csaba",
+            "age": 19,
+            "cars": [
+                {"name": "Toyota", "models": ["CHR", "Corolla", "Proace"]},
+                {"name": "Ford", "models": ["Kuga", "Mondeo", "Mustang"]},
+                {"name": "BMW", "models": ["320", "X3", "X5"]},
+                {"name": "Fiat", "models": ["500", "Panda", "Tipo"]},
+            ]
+        }
+
+        const JsonDGIPWG = document.getElementById('JsonDGIPWG');
+
+        const h2 = document.createElement('h2');
+        h2.innerHTML = `<span><b>${PCS["name"]}</b></span> (${PCS["age"]})`;
+        JsonDGIPWG.appendChild(h2);
+
+        for(let i = 0; i < PCS["cars"].lenght; i++)
+    </script>
+</body>
+</html>

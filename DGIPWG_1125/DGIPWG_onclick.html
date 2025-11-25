@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick HTML</title>
+</head>
+
+<body>
+
+    <h3>Eseménytípus: onclick a HTML nyelvben</h3>
+    <b>Két szám összege:</b> <p id="DGIPWG"></p>
+
+    <button onclick="osszead(10,10)">Összeadás</button>
+
+    <script>
+        function osszead(szam1, szam2) {
+            document.getElementById("DGIPWG").innerHTML = szam1 + szam2;
+        }
+    </script>
+    
+</body>
+</html>

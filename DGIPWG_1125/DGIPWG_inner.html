@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTML</title>
+</head>
+<body>
+    
+    <h3>InnerHTML</h3>
+
+    <p id="DGIPWG1">Ennek olvassa ki a tartalmát.</p>
+    <p id="DGIPWG2">Ennek írja át a tartalmát</p>
+
+    <button onclick="kiolvas()">Kiolvas</button>
+    <button onclick="atir()">Átír</button>
+
+    <script>
+
+        function kiolvas() {
+            alert(document.getElementById("DGIPWG1").innerHTML);
+        }
+
+        function atir() {
+            document.getElementById("DGIPWG2").innerHTML = "Átírja a tartalmat.";
+        }
+
+    </script>
+</body>
+</html>
