@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript eseménytípusok</title>
+</head>
+<body>
+    
+    <h3>Eseménytípusok - onmousemover, onmouserout</h3>
+    <p>Húzza az egeret a gombra</p>
+
+    <button onmouseover="rahuz(this)" onmouseout="lehuz(this)">Gomb</button>
+
+    <script>
+        function rahuz(pt1) {
+            pt1.style.backgroundColor = "red";
+        }
+
+        function lehuz(pt1) {
+            pt1.style.backgroundColor = "yellow";
+        }
+
+    </script>
+</body>
+</html>

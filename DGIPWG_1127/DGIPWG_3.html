@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuerry feladatok_3</title>
+
+    <script src="jquery/jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#np1").click(function(){
+                $(this).hide();
+            });
+
+            $("#np2").dbclick(function(){
+                $(this).hide();
+            });
+
+            $("#gomb").mouseenter(function(){
+                alert('A gomb fölé húztad az egeret.');
+            });
+
+            $("#h2").mouseenter(function(){
+                alert('Elhúztad az egeret a fejlécről.');
+            });
+
+            $("#form").mousedown(function(){
+                $(this).css("border","10px #333399 solid");
+            });
+
+            $("#form").mousedown(function(){
+                $(this).css("border","10px");
+            });
+
+             $("#nev,#email,#jelsz,p").hover(function(){
+                //$(this).css("background-color","")
+                },
+                function(){
+
+                }
+            );
+
+            $("#nev,#email,#jelszo").focus(function(){
+                $(this).css("backround-color","#ff99ff");
+            });
+
+            $("#nev,#email,#jelszo").blur(function(){
+                $(this).css("backround-color","#ffffff");
+            });
+
+            })
+
+    </script>
+</head>
+<body>
+    
+    <h2>jQuerry feladatok</h2>
+
+    <p id="p1">A jQuerry egy JavaScript programozói könyvtár, amelyet John Restig kezdett fejleszteni. <strong>Kattints ide</strong>, és eltűnik!</p>
+    <p id="p2">Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja. <strong>Kattints ide duplán</strong>, és eltűnik!</p>
+
+    <br>
+
+    <form style="padding: 10px; width: 500px;">
+
+        <b>Név:</b> <input id="nev" name="nev"><br><br>
+        <b>Email:</b> <input id="email" name="email"><br><br>
+        <b>Jelszó:</b> <input id="jelszo" name="jelszo" type="password"><br><br><br>
+
+        <input id="gomb" type="button" value="Jelentkezés">
+
+    </form>
+</body>
+</html>
